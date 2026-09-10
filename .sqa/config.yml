@@ -1,0 +1,52 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/ARGOeu/argo-monitoring:
+      branch: master
+      repo: https://github.com/ARGOeu/argo-monitoring
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: fix/updatego
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/ARGOeu/argo-monitoring git:
+        commands:
+        - /usr/bin/env sh .sqa/script.walnut_hopeful_grizzly.sh
+        container: qc.acc_jade_zany_dragon
+  QC.Doc:
+    repos:
+      github.com/ARGOeu/argo-monitoring find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.cornflower_visionary_eagle.sh
+        container: qc.doc_grape_innocent_quail
+      github.com/ARGOeu/argo-monitoring git:
+        commands:
+        - /usr/bin/env sh .sqa/script.tundra_fierce_meerkat.sh
+        container: qc.doc_raven_open_lemur
+      github.com/ARGOeu/argo-monitoring markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.wisteria_tolerant_ibex.sh
+        container: qc.doc_frost_ardent_otter
+  QC.Lic:
+    repos:
+      github.com/ARGOeu/argo-monitoring licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.wisteria_silly_clownfish.sh
+        container: qc.lic_jasmine_lively_lynx
+  QC.Sty:
+    repos:
+      github.com/ARGOeu/argo-monitoring jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.butterscotch_daring_goat.sh
+        container: qc.sty_grape_sad_elephant
+  QC.Ver:
+    repos:
+      github.com/ARGOeu/argo-monitoring get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.carmine_forgiving_angelfish.sh
+        container: qc.ver_apricot_fearless_squirrel
+timeout: 5400
