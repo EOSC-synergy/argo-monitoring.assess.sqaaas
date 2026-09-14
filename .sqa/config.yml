@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/ARGOeu/argo-monitoring git:
         commands:
-        - /usr/bin/env sh .sqa/script.azure_reflective_dolphin.sh
-        container: qc.acc_marigold_spirited_panda
+        - /usr/bin/env sh .sqa/script.flamingo_lively_skunk.sh
+        container: qc.acc_pineapple_sweet_fox
   QC.Doc:
     repos:
       github.com/ARGOeu/argo-monitoring find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ash_exuberant_hydra.sh
-        container: qc.doc_cornflower_worried_toad
+        - /usr/bin/env sh .sqa/script.fog_amused_gibbon.sh
+        container: qc.doc_cherry_curious_kiwi
       github.com/ARGOeu/argo-monitoring git:
         commands:
-        - /usr/bin/env sh .sqa/script.sapphire_diplomatic_hyena.sh
-        container: qc.doc_echelon_empathetic_vulture
+        - /usr/bin/env sh .sqa/script.lilac_nurturing_gorilla.sh
+        container: qc.doc_jet_proud_stork
       github.com/ARGOeu/argo-monitoring markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.denim_harmonious_quokka.sh
-        container: qc.doc_malachite_independent_ostrich
+        - /usr/bin/env sh .sqa/script.heather_playful_gazelle.sh
+        container: qc.doc_viridian_stoic_swan
   QC.Lic:
     repos:
       github.com/ARGOeu/argo-monitoring licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.onyx_protective_puffin.sh
-        container: qc.lic_linen_tactful_jaguar
+        - /usr/bin/env sh .sqa/script.powder_dramatic_manatee.sh
+        container: qc.lic_fog_blissful_frog
   QC.Sty:
     repos:
       github.com/ARGOeu/argo-monitoring jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ceru_wondrous_manatee.sh
-        container: qc.sty_fandango_outgoing_quoll
+        - /usr/bin/env sh .sqa/script.cinnabar_harmonious_condor.sh
+        container: qc.sty_horizon_zealous_sloth
   QC.Ver:
     repos:
       github.com/ARGOeu/argo-monitoring get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.peach_worried_cougar.sh
-        container: qc.ver_bronze_fair_hedgehog
+        - /usr/bin/env sh .sqa/script.gamboge_rugged_barracuda.sh
+        container: qc.ver_orchid_playful_marmoset
 timeout: 5400
