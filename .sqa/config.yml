@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/ARGOeu/argo-monitoring git:
         commands:
-        - /usr/bin/env sh .sqa/script.walnut_hopeful_grizzly.sh
-        container: qc.acc_jade_zany_dragon
+        - /usr/bin/env sh .sqa/script.azure_reflective_dolphin.sh
+        container: qc.acc_marigold_spirited_panda
   QC.Doc:
     repos:
       github.com/ARGOeu/argo-monitoring find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cornflower_visionary_eagle.sh
-        container: qc.doc_grape_innocent_quail
+        - /usr/bin/env sh .sqa/script.ash_exuberant_hydra.sh
+        container: qc.doc_cornflower_worried_toad
       github.com/ARGOeu/argo-monitoring git:
         commands:
-        - /usr/bin/env sh .sqa/script.tundra_fierce_meerkat.sh
-        container: qc.doc_raven_open_lemur
+        - /usr/bin/env sh .sqa/script.sapphire_diplomatic_hyena.sh
+        container: qc.doc_echelon_empathetic_vulture
       github.com/ARGOeu/argo-monitoring markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wisteria_tolerant_ibex.sh
-        container: qc.doc_frost_ardent_otter
+        - /usr/bin/env sh .sqa/script.denim_harmonious_quokka.sh
+        container: qc.doc_malachite_independent_ostrich
   QC.Lic:
     repos:
       github.com/ARGOeu/argo-monitoring licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.wisteria_silly_clownfish.sh
-        container: qc.lic_jasmine_lively_lynx
+        - /usr/bin/env sh .sqa/script.onyx_protective_puffin.sh
+        container: qc.lic_linen_tactful_jaguar
   QC.Sty:
     repos:
       github.com/ARGOeu/argo-monitoring jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.butterscotch_daring_goat.sh
-        container: qc.sty_grape_sad_elephant
+        - /usr/bin/env sh .sqa/script.ceru_wondrous_manatee.sh
+        container: qc.sty_fandango_outgoing_quoll
   QC.Ver:
     repos:
       github.com/ARGOeu/argo-monitoring get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.carmine_forgiving_angelfish.sh
-        container: qc.ver_apricot_fearless_squirrel
+        - /usr/bin/env sh .sqa/script.peach_worried_cougar.sh
+        container: qc.ver_bronze_fair_hedgehog
 timeout: 5400
